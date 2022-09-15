@@ -1,0 +1,34 @@
+.loading {
+    --count: 5;
+    --circle: 360deg;
+    --deg: calc(var(--circle) / var(--count));
+    --duration: 1s;
+    --delay: calc(var(--duration) / var(--count));
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .loading div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(var(--value) * var(--deg)));
+  }
+  .loading div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2cccff;
+    filter: hue-rotate(calc(var(--value) * 45deg));
+    animation: balls var(--duration) infinite;
+    animation-delay: calc(var(--value) * var(--delay));
+  }
+  @keyframes balls {
+    100% {
+      transform: scale(0.25);
+    }
+  }
