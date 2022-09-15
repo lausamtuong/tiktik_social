@@ -72,7 +72,7 @@ const LikeButton: NextPage<IProps> = ({
           <p className="text-md font-semibold ">{likes?.length || 0}</p>
         </div>
       </div>
-      <div className="flex gap-2 justify-end flex-auto mt-4 h-[50px]">
+      <div className="flex gap-2 justify- flex-auto mt-4 h-[50px]">
         <Tooltip
           content={"Embed"}
           css={{ fontWeight: "bold" }}

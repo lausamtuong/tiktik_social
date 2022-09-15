@@ -55,7 +55,7 @@ const Details = ({ postDetails }: IProps) => {
   return (
     <>
       {post && (
-        <div className="flex gap-y-[20px] absolute left-0 top-0 bg-white flex-wrap lg:flex-nowrap">
+        <div className="flex gap-[20px] absolute left-0 top-0 bg-white flex-wrap lg:flex-nowrap">
           <div className="relative flex-2 w-[1000px] lg:w-9/12 flex justify-center items-center bg-blurred-img bg-no-repeat bg-cover bg-center">
             <div className="opacity-90 absolute top-6 left-2 lg:left-6 flex gap-6 z-50">
               <p className="cursor-pointer " onClick={() => router.back()}>

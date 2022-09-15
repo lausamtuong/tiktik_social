@@ -55,7 +55,7 @@ const Details = ({ postDetails }: IProps) => {
   return (
     <>
       {post && (
-        <div className="flex gap-y-[20px] absolute left-0 top-0 bg-white flex-wrap lg:flex-nowrap">
+        <div className="flex w-full absolute left-0 top-0 bg-white flex-wrap lg:flex-nowrap">
           <div className="relative flex-2 w-[1000px] lg:w-9/12 flex justify-center items-center bg-blurred-img bg-no-repeat bg-cover bg-center">
             <div className="opacity-90 absolute top-6 left-2 lg:left-6 flex gap-6 z-50">
               <p className="cursor-pointer " onClick={() => router.back()}>
@@ -63,19 +63,19 @@ const Details = ({ postDetails }: IProps) => {
               </p>
             </div>
             <div className="relative">
-              <div className="lg:h-[100vh] h-[60vh] w-[100vh] md:w-full">
+              <div className="lg:h-[100vh] h-[60vh] w-[100vh] md:w">
                 <video
                   ref={videoRef}
                   loop
                   src={post?.video?.asset.url}
-                  className=" h-full cursor-pointer mx-auto  w-[100%]"
+                  className=" h-full cursor-pointer mx-auto object-cover w-[60%]"
                   controls
                 ></video>
               </div>
             </div>
           </div>
-          <div className="relative w-[150%] md:w-full">
-            <div className=" flex flex-col h-[100%] ">
+          <div className="relative ">
+            <div className="gap-[20px] flex flex-col h-[100%] ">
               <CardInfo post={post} />
               <div className=" px-5 flex flex-col">
                 {true && (
@@ -86,7 +86,7 @@ const Details = ({ postDetails }: IProps) => {
                     handleDislike={() => handleLike(false)}
                   />
                 )}
-                <div className="flex text-[14px] text-[#161823bf] my-[16px] rounded-[2px] border-[1px] border-gray-300">
+                <div className="flex text-[14px] text-[#161823bf] mt-[16px] rounded-[2px] border-[1px] border-gray-300">
                   <p className="overflow-hidden text-ellipsis whitespace-nowrap bg-[#1618230f] pt-[7px] pr-[5px] pl-[12px] flex-auto">
                     {window.location.href}
                   </p>

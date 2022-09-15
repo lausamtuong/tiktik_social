@@ -41,7 +41,7 @@ const LikeButton: NextPage<IProps> = ({
   }, [filterLikes, likes]);
 
   return (
-    <div className="flex justify-between gap-[100px] items-center sm:gap-4">
+    <div className="flex sm:justify-between gap-[100px] items-center sm:gap-4">
       <div className={`${flex} gap-3`}>
         <div className="mt-4 flex gap-1 justify-center items-center   cursor-pointer">
           {alreadyLiked ? (
@@ -72,7 +72,7 @@ const LikeButton: NextPage<IProps> = ({
           <p className="text-md font-semibold ">{likes?.length || 0}</p>
         </div>
       </div>
-      <div className="flex gap-2 justify-end flex-auto mt-4 h-[50px]">
+      <div className="flex gap-2 flex-autmt-4 h-[50px]">
         <Tooltip
           content={"Embed"}
           css={{ fontWeight: "bold" }}

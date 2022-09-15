@@ -31,7 +31,7 @@ const CardInfo = ({post}) => {
               </Grid.Container>
             </Link>
           </div>
-          <div className="flex flex-auto w-full justify-between gap-[190px]  sm:gap-0">
+          <div className="flex  w-full sm:justify-between gap-[190px]  sm:gap-0">
             <div className="">
               <Link href="/">
                 <div className="flex items-center gap-2">
