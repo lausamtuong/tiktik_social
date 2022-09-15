@@ -6,7 +6,7 @@ import NoResult from "../components/NoResult";
 import React from "react";
 import {RiCloseFill} from'react-icons/ri'
 import Head from 'next/head'
-import { BASE_URL } from '../utils';
+import {Ba}
 interface IProps {
   videos: Video[];
 }
@@ -15,6 +15,7 @@ const Home = ({ videos }: IProps) => {
   const handler = () => setVisible(true);
   const closeHandler = () => {
     setVisible(false);
+    console.log("closed");
   };
   return (
     <>
@@ -82,7 +83,7 @@ const Home = ({ videos }: IProps) => {
   );
 };
 export const getServerSideProps = async () => {
-  const { data } = await axios.get(`${BASE_URL}/api/post`);
+  const { data } = await axios.get(`http://localhost:3000/api/post`);
 
   return {
     props: {

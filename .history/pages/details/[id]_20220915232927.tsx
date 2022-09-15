@@ -5,6 +5,7 @@ import { HiAtSymbol } from "react-icons/hi";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { Input, Spacer, Tooltip,Button } from "@nextui-org/react";
 import CardInfo from "../../components/CardInfo"
+
 import { BASE_URL } from "../../utils";
 import LikeButton from "../../components/LikeButton";
 import useAuthStore from "../../store/authStore";

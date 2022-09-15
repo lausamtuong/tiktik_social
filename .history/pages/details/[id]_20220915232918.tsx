@@ -4,7 +4,11 @@ import { MdOutlineCancel } from "react-icons/md";
 import { HiAtSymbol } from "react-icons/hi";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { Input, Spacer, Tooltip,Button } from "@nextui-org/react";
-import CardInfo from "../../components/CardInfo"
+import CardInfo from "../../components/CardInfo";
+// import Comments from '../../components/Comments';
+import { Popover,Text } from "@nextui-org/react";
+
+import Picker from 'emoji-picker-react';
 import { BASE_URL } from "../../utils";
 import LikeButton from "../../components/LikeButton";
 import useAuthStore from "../../store/authStore";

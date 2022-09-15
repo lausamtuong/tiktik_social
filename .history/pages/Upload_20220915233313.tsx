@@ -7,7 +7,6 @@ import { topics } from "../utils/constants";
 import { useRouter } from "next/router";
 
 import axios from "axios";
-import { BASE_URL } from "../utils";
 const Upload = () => {
   const [caption, setCaption] = useState("");
   const [topic, setTopic] = useState<String>(topics[0].name);
