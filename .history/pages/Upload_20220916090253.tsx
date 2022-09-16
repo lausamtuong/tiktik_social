@@ -7,7 +7,7 @@ import { topics } from "../utils/constants";
 import { useRouter } from "next/router";
 
 import axios from "axios";
-import  {BASE_URL}  from "../utils";
+import { BASE_URL } from "../utils";
 const Upload = () => {
   const [caption, setCaption] = useState("");
   const [topic, setTopic] = useState<String>(topics[0].name);
@@ -58,7 +58,7 @@ const Upload = () => {
         topic,
       };
       
-      await axios.post(`/api/post`, doc);
+      await axios.post(`${BASE_URL}/api/post`, doc);
 
       router.push("/");
     }

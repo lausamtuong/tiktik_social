@@ -57,7 +57,7 @@ const Upload = () => {
         },
         topic,
       };
-      
+      console.log(`${BASE_URL}api/post`);
       await axios.post(`/api/post`, doc);
 
       router.push("/");
