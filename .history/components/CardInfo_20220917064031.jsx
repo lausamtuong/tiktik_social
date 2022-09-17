@@ -47,7 +47,7 @@ const CardInfo = ({post}) => {
               <div className="font-normal">{post.caption}</div>
               <div className="">Music Upcoming</div>
             </div>
-            <div className="mr-[90px]">
+            <div className="mr-[50px]">
               {!follow ? (
                 <Button
                   color="error"

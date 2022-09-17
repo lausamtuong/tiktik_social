@@ -30,7 +30,7 @@ const Sidebar = () => {
         {showSidebar ? <ImCancelCircle className='m-auto'/> : <AiOutlineMenu className='m-auto'/>}
       </div>
       {showSidebar && (
-        <div className="  flex flex-col justify-start xl:w-[350px] w-20 mb-10 border-r-2 border-gray-100 xl:border-0 p-3">
+        <div className="  flex flex-col justify-start xl:w-[5px] w-20 mb-10 border-r-2 border-gray-100 xl:border-0 p-3">
           <div className="xl:border-b-2 border-gray-200 xl:pb-4">
             <Link href="/">
               <div className={params==='/'?activeLink:normalLink}>

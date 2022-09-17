@@ -55,7 +55,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
             onClick={() => {
               setLike((prev) => !prev);
             }}
-            className="bg-gray-200 hover:bg-gray-300 cursor-pointer rounded-full w-[30px] h-[30px] p-[6px] md:w-[60px] md:h-[60px] flex items-center justify-center"
+            className="bg-gray-200 hover:bg-gray-300 cursor-pointer rounded-full w-[30px] h-[40px] p-[6px] md:w-[60px] md:h-[60px] flex items-center justify-center"
           >
             {like ? (
               <AiFillHeart className="text-sm md:text-3xl" />
